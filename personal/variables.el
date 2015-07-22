@@ -25,3 +25,8 @@
 
 ;; put a space in the border for linum
 (setq linum-format  "%4d ")
+
+;; use web-mode for everything
+(add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
