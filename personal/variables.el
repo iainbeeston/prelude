@@ -12,5 +12,16 @@
 ;; when opening files, do not try to guess the path from the text under the cursor
 (setq ido-use-filename-at-point nil)
 
+;; set css mode tab width to 2
+(setq css-indent-offset 2)
+
+;; set javascript and json tab width to 2
+(setq-default js2-basic-offset 2)
+
+;; set web-mode tab width to 2
+(setq web-mode-markup-indent-offset 2)
+(setq web-mode-css-indent-offset 2)
+(setq web-mode-code-indent-offset 2)
+
 ;; put a space in the border for linum
 (setq linum-format  "%4d ")
