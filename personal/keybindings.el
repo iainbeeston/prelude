@@ -1,3 +1,4 @@
+;; disable "normal" navigation keys
 (global-unset-key (kbd "<left>"))
 (global-unset-key (kbd "<right>"))
 (global-unset-key (kbd "<up>"))
@@ -14,6 +15,7 @@
 (global-unset-key (kbd "C-+"))
 (global-unset-key (kbd "<DEL>"))
 
+;; better navigation keys
 (global-set-key (kbd "C-?") 'help-command)
 (global-set-key (kbd "M-?") 'mark-paragraph)
 (global-set-key (kbd "C-h") 'delete-backward-char)
