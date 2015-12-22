@@ -26,6 +26,8 @@
 ;; put a space in the border for linum
 (setq linum-format  "%4d ")
 
+;; use js2 for es6 files
+(add-to-list 'auto-mode-alist '("\\.es6\\'" . js2-mode))
 ;; use web-mode for everything
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
