@@ -10,3 +10,8 @@
             (unless (string-match "jsx" (file-name-extension buffer-file-name))
               (message "disabling jscs (not jsx file)")
               (setq-default flycheck-disabled-checkers '(javascript-jscs)))))
+
+;; automatically align columns when opening a csv file
+(add-hook 'csv-mode-hook
+          (lambda ()
+            (csv-align-fields nil (point-min) (point-max))))
