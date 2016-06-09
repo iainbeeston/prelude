@@ -23,6 +23,9 @@
 (setq web-mode-css-indent-offset 2)
 (setq web-mode-code-indent-offset 2)
 
+;; highlight closing tag in web-mode
+(setq web-mode-enable-current-element-highlight t)
+
 ;; put a space in the border for linum
 (setq linum-format  "%4d ")
 
