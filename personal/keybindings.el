@@ -23,3 +23,4 @@
 
 ;; faster access to devdocs
 (global-set-key (kbd "C-c C-d") 'devdocs-search)
+(define-key web-mode-map (kbd "C-c C-d") 'devdocs-search)
