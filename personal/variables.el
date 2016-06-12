@@ -6,8 +6,9 @@
     (let ((proc (start-process "pbcopy" "*Messages*" "pbcopy")))
       (process-send-string proc text)
       (process-send-eof proc))))
-(setq interprogram-paste-function 'copy-from-osx)
-(setq interprogram-cut-function 'paste-to-osx)
+(when (eq system-type 'darwin)
+  (setq interprogram-paste-function 'copy-from-osx)
+  (setq interprogram-cut-function 'paste-to-osx))
 
 ;; when opening files, do not try to guess the path from the text under the cursor
 (setq ido-use-filename-at-point nil)
