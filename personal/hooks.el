@@ -1,8 +1,3 @@
-;; override keys in the minibuffer
-(add-hook 'minibuffer-setup-hook
-          (lambda ()
-            (local-set-key (kbd "C-h") 'delete-backward-char)))
-
 ;; tell flycheck to disable jscs in web mode unless it's a jsx file
 (add-hook 'web-mode-hook
           (lambda ()

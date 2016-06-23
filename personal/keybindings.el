@@ -1,7 +1,4 @@
 ;; better navigation keys
-(global-set-key (kbd "M-?") 'mark-paragraph)
-(global-set-key (kbd "C-h") 'delete-backward-char)
-(global-set-key (kbd "M-h") 'backward-kill-word)
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
@@ -10,7 +7,6 @@
 (global-set-key (kbd "M-3") "#")
 
 ;; redefine keys for isearch mode
-(define-key isearch-mode-map (kbd "C-h") 'isearch-del-char)
 (define-key isearch-mode-map (kbd "C-f") 'isearch-ring-advance)
 (define-key isearch-mode-map (kbd "C-b") 'isearch-ring-retreat)
 
