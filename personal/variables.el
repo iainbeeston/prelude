@@ -36,6 +36,8 @@
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
+;; use ruby for builder files
+(add-to-list 'auto-mode-alist '("\\.builder\\'" . ruby-mode))
 
 ;; use labburn zenburn theme
 (setq prelude-theme 'labburn)
