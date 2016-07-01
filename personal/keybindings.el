@@ -2,10 +2,6 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
-;; emulate gb keyboard layout
-(global-set-key (kbd "M-2") "€")
-(global-set-key (kbd "M-3") "#")
-
 ;; redefine keys for isearch mode
 (define-key isearch-mode-map (kbd "C-f") 'isearch-ring-advance)
 (define-key isearch-mode-map (kbd "C-b") 'isearch-ring-retreat)
