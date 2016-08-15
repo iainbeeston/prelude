@@ -41,3 +41,6 @@
 
 ;; use labburn zenburn theme
 (setq prelude-theme 'labburn)
+
+;; set max line length to 100
+(setq whitespace-line-column 100)
