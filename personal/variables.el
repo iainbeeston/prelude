@@ -38,6 +38,8 @@
 (add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 ;; use ruby for builder files
 (add-to-list 'auto-mode-alist '("\\.builder\\'" . ruby-mode))
+;; use ruby for .ruby templates
+(add-to-list 'auto-mode-alist '("\\.ruby\\'" . ruby-mode))
 
 ;; use labburn zenburn theme
 (setq prelude-theme 'labburn)
