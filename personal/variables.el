@@ -46,3 +46,7 @@
 
 ;; set max line length to 100
 (setq whitespace-line-column 100)
+
+;; stop js2-mode from doing it's own syntax validation
+(setq js2-mode-show-parse-errors nil)
+(setq js2-mode-show-strict-warnings nil)
