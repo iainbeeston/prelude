@@ -30,10 +30,11 @@
 ;; put a space in the border for linum
 (setq linum-format  "%4d ")
 
-;; use js2 for es6 and jsx files
-(add-to-list 'auto-mode-alist '("\\.es6\\'" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . js2-mode))
 ;; use web-mode for everything
+(setq auto-mode-alist (rassq-delete-all 'js2-mode auto-mode-alist))
+(add-to-list 'auto-mode-alist '("\\.js\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.es6\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.hbs\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 ;; use ruby for builder files
