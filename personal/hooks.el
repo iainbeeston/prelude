@@ -7,3 +7,7 @@
 (add-hook 'prelude-prog-mode-hook
           (lambda ()
             (smartparens-mode -1)) t)
+
+(add-hook 'after-change-major-mode-hook
+          (lambda ()
+            (electric-indent-mode -1)))
