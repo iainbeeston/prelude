@@ -2,6 +2,9 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
+;; make full-screen use the default mac os shortcut
+(global-set-key (kbd "<C-s-268632070>") 'toggle-frame-fullscreen)
+
 ;; redefine keys for isearch mode
 (define-key isearch-mode-map (kbd "C-f") 'isearch-ring-advance)
 (define-key isearch-mode-map (kbd "C-b") 'isearch-ring-retreat)
