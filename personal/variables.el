@@ -15,6 +15,9 @@
 ;; highlight closing tag in web-mode
 (setq web-mode-enable-current-element-highlight t)
 
+;; use jsx mode for both javascript and jsx files
+(add-to-list 'web-mode-content-types '("jsx" . "\\.js[x]?\\'"))
+
 ;; put a space in the border for linum
 (setq linum-format  "%4d ")
 
