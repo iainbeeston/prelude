@@ -9,6 +9,9 @@
 (setq web-mode-css-indent-offset 2)
 (setq web-mode-code-indent-offset 2)
 
+;; stop web-mode trying to line things up
+(add-to-list 'web-mode-indentation-params '("lineup-args|lineup-ternary|calls|concats" . nil))
+
 ;; highlight closing tag in web-mode
 (setq web-mode-enable-current-element-highlight t)
 
