@@ -8,6 +8,7 @@
           (lambda ()
             (smartparens-mode -1)) t)
 
+;; disable electric indent mode
 (add-hook 'after-change-major-mode-hook
           (lambda ()
             (electric-indent-mode -1)))
