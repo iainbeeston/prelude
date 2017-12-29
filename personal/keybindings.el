@@ -2,6 +2,12 @@
 (global-set-key (kbd "M-p") 'backward-paragraph)
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
+;; define # and € correctly for macbook uk keyboard
+(global-set-key (kbd "M-2") (kbd "€"))
+(global-set-key (kbd "M-3") (kbd "#"))
+(define-key isearch-mode-map (kbd "M-2") (kbd "€"))
+(define-key isearch-mode-map (kbd "M-3") (kbd "#"))
+
 ;; make full-screen use the default mac os shortcut
 (global-set-key (kbd "<C-s-268632070>") 'toggle-frame-fullscreen)
 
