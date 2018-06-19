@@ -42,3 +42,6 @@
 ;; swap option and command on emacs mac port
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'super)
+
+;; ask emacs to confirm before quitting
+(setq confirm-kill-emacs 'y-or-n-p)
