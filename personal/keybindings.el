@@ -25,3 +25,6 @@
 ;; disable zooming
 (global-unset-key (kbd "C--"))
 (global-unset-key (kbd "C-+"))
+
+;; disable process monitor
+(global-unset-key (kbd "C-x p"))
