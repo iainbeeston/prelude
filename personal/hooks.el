@@ -6,7 +6,7 @@
 ;; disable smart parens
 (add-hook 'prelude-prog-mode-hook
           (lambda ()
-            (smartparens-mode -1)) t)
+            (smartparens-mode -1)))
 
 ;; disable electric indent mode
 (add-hook 'after-change-major-mode-hook
