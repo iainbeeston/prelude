@@ -8,3 +8,7 @@
 ;; tell flycheck that web-mode can use eslint
 (with-eval-after-load 'flycheck
   (flycheck-add-mode 'javascript-eslint 'web-mode))
+
+;; set up moody for mode line styling
+(moody-replace-mode-line-buffer-identification)
+(moody-replace-vc-mode)

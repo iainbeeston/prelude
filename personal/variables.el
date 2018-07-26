@@ -36,6 +36,9 @@
 ;; use labburn zenburn theme
 (setq prelude-theme 'labburn)
 
+;; settings needed for moody
+(setq x-underline-at-descent-line t)
+
 ;; set max line length to 100
 (setq whitespace-line-column 100)
 
