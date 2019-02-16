@@ -48,6 +48,9 @@
 ;; use labburn zenburn theme
 (setq prelude-theme 'labburn)
 
+;; set font-size to 14pt
+(set-face-attribute 'default nil :height 140)
+
 ;; settings needed for moody
 (setq x-underline-at-descent-line t)
 
