@@ -63,3 +63,5 @@
 
 ;; don't cleanup whitespace on save
 (setq prelude-clean-whitespace-on-save nil)
+;; don't open a new ag buffer for each search
+(setq ag-reuse-buffers 't)
