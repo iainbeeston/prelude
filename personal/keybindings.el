@@ -28,3 +28,6 @@
 
 ;; disable process monitor
 (global-unset-key (kbd "C-x p"))
+
+;; make dired open new directories in the same buffer
+(define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file)
