@@ -66,5 +66,8 @@
 
 ;; don't cleanup whitespace on save
 (setq prelude-clean-whitespace-on-save nil)
+
+;; open ag search results in the current frame
+(setq ag-reuse-window 't)
 ;; don't open a new ag buffer for each search
 (setq ag-reuse-buffers 't)
