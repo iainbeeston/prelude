@@ -71,3 +71,5 @@
 (setq ag-reuse-window 't)
 ;; don't open a new ag buffer for each search
 (setq ag-reuse-buffers 't)
+;; limit ag matches to 500 characters per line
+(setq ag-arguments (list "--smart-case" "--stats" "--width=500"))
