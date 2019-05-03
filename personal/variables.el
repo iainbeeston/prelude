@@ -73,3 +73,6 @@
 (setq ag-reuse-buffers 't)
 ;; limit ag matches to 500 characters per line
 (setq ag-arguments (list "--smart-case" "--stats" "--width=500"))
+
+;; don't auto-insert magic encoding comments
+(setq ruby-insert-encoding-magic-comment nil)
