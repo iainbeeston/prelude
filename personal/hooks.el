@@ -12,3 +12,9 @@
 (add-hook 'after-change-major-mode-hook
           (lambda ()
             (electric-indent-mode -1)))
+
+;; setup chruby after opening a ruby file
+(add-hook 'ruby-mode-hook
+          (lambda ()
+            (unless (boundp 'chruby-current-ruby-name)
+              (chruby-use-corresponding))))
