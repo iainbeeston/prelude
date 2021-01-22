@@ -73,3 +73,6 @@
 
 ;; don't auto-insert magic encoding comments
 (setq ruby-insert-encoding-magic-comment nil)
+
+;; make ediff split windows vertically
+(setq ediff-split-window-function 'split-window-right)
