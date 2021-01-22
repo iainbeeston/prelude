@@ -61,9 +61,6 @@
 (setq mac-option-modifier 'meta)
 (setq mac-command-modifier 'super)
 
-;; ask emacs to confirm before quitting
-(setq confirm-kill-emacs 'y-or-n-p)
-
 ;; don't cleanup whitespace on save
 (setq prelude-clean-whitespace-on-save nil)
 
